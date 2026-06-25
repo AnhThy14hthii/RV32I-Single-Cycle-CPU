@@ -68,7 +68,7 @@ The **ALU** accepts two 32-bit operands and performs the operation selected by t
 
 The **Data Memory** unit serves Load and Store instructions. The **Immediate Generator** extracts and sign-extends the immediate value from the instruction's bit fields, adapting to each format (I, S, B, U, J).
 
-![Data Memory and Immediate Generation Unit](images/Data_mem.png)
+![Data Memory and Immediate Generation Unit](images/Datamem.png)
 
 ---
 
