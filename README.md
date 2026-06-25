@@ -14,7 +14,7 @@ RV32I is the base integer instruction set of the open-source RISC-V architecture
 
 Six encoding formats cover every instruction in the ISA: R, I, S, B, U, and J.
 
-![Core Instruction Formats](images/Core_Instruction_Formats.png)
+![Core Instruction Formats](Core_Instruction_Format/Core_Instruction_Formats.png)
 
 ---
 
@@ -24,7 +24,7 @@ Six encoding formats cover every instruction in the ISA: R, I, S, B, U, and J.
 
 R-type instructions operate on two registers (`rs1 OP rs2`). I-type variants use an immediate (`rs1 OP imm`). The result always goes to `rd`.
 
-![Arithmetic and Logical Instructions](images/Arthmetic_and_Logical.png)
+![Arithmetic and Logical Instructions](Core_Instruction_Format/Arthmetic_and_Logical.png)
 
 ---
 
@@ -32,7 +32,7 @@ R-type instructions operate on two registers (`rs1 OP rs2`). I-type variants use
 
 Load (I-type) and Store (S-type) instructions compute the address as `rs1 + imm`.
 
-![Memory Access Instruction Formats](images/Memory.png)
+![Memory Access Instruction Formats](Core_Instruction_Format/Memory.png)
 
 ---
 
@@ -40,7 +40,7 @@ Load (I-type) and Store (S-type) instructions compute the address as `rs1 + imm`
 
 Branch instructions (B-type) compare rs1 and rs2, jumping to `PC + imm` if the condition holds. Jump instructions (J-type / I-type) are unconditional.
 
-![Branch and Jump Instruction Formats](images/Conditional.png)
+![Branch and Jump Instruction Formats](Core_Instruction_Format/Conditional.png)
 
 ---
 
