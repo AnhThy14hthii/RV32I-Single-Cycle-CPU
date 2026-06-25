@@ -14,7 +14,7 @@ RV32I is the base integer instruction set of the open-source RISC-V architecture
 
 Six encoding formats cover every instruction in the ISA: R, I, S, B, U, and J.
 
-![Core Instruction Formats](Core_Instruction_Format/Core_Instruction_Formats.png)
+![Core Instruction Formats](Core_Instruction_Format/CoreInstructionFormats.png)
 
 ---
 
@@ -24,7 +24,7 @@ Six encoding formats cover every instruction in the ISA: R, I, S, B, U, and J.
 
 R-type instructions operate on two registers (`rs1 OP rs2`). I-type variants use an immediate (`rs1 OP imm`). The result always goes to `rd`.
 
-![Arithmetic and Logical Instructions](Core_Instruction_Format/Arthmetic_and_Logical.png)
+![Arithmetic and Logical Instructions](Core_Instruction_Format/ArthmeticandLogical.png)
 
 ---
 
