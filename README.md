@@ -4,7 +4,7 @@ A Verilog implementation of a **RISC-V RV32I Single-Cycle CPU** — every instru
 
 > Based on *Patterson & Hennessy — Computer Organization and Design, RISC-V Edition*
 
----
+
 
 ## ISA Overview
 
@@ -16,7 +16,7 @@ Six encoding formats cover every instruction in the ISA: R, I, S, B, U, and J.
 
 ![Core Instruction Formats](Core_Instruction_Format/CoreInstructionFormats.png)
 
----
+
 
 ## Instruction Groups
 
@@ -26,7 +26,7 @@ R-type instructions operate on two registers (`rs1 OP rs2`). I-type variants use
 
 ![Arithmetic and Logical Instructions](Core_Instruction_Format/ArthmeticandLogical.png)
 
----
+
 
 ### Memory Access
 
@@ -34,7 +34,7 @@ Load (I-type) and Store (S-type) instructions compute the address as `rs1 + imm`
 
 ![Memory Access Instruction Formats](Core_Instruction_Format/Memory.png)
 
----
+
 
 ### Control Transfer — Branch & Jump
 
@@ -42,7 +42,7 @@ Branch instructions (B-type) compare rs1 and rs2, jumping to `PC + imm` if the c
 
 ![Branch and Jump Instruction Formats](Core_Instruction_Format/Conditional.png)
 
----
+
 
 ## Datapath Design
 
@@ -52,7 +52,7 @@ The PC register holds the current instruction address. The Instruction Memory ou
 
 ![Instruction Fetch Unit](images/Instruction.png)
 
----
+
 
 ### Register File & ALU
 
@@ -62,7 +62,7 @@ The **ALU** accepts two 32-bit operands and performs the operation selected by t
 
 ![Register File and ALU](images/Register_ALU.png)
 
----
+
 
 ### Data Memory & Immediate Generator
 
@@ -70,7 +70,7 @@ The **Data Memory** unit serves Load and Store instructions. The **Immediate Gen
 
 ![Data Memory and Immediate Generation Unit](images/Data_mem.png)
 
----
+
 
 ### Complete Single-Cycle Datapath
 
@@ -82,7 +82,7 @@ All blocks connect into one unified datapath. Three data flows operate simultane
 
 ![Complete Single-Cycle Datapath](images/Datapath.png)
 
----
+
 
 ## Control Unit
 
